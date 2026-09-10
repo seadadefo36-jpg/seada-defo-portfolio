@@ -1,1 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seada Defo- Professional Web Developer</title>
+    <meta name="description" content="Professional web developer specializing in responsive design and modern web applications.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+               <div class="logo">
+                    <span class="logo-symbol">&lt;/&gt;</span>
+                    <span class="logo-text">Seada Defo</span>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hello, I'm <span class="gradient-text">Seada Defo</span></h1>
+                    <p class="hero-subtitle">Frontend Web Developer</p>
+                    <p class="hero-description">
+    I create modern, responsive, and user-friendly websites using HTML, CSS, and JavaScript.
+    I turn ideas into clean, professional digital experiences.
+</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('portfolio')">View My Work</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <img src="images/profile.jpg" alt="Seada Defo- Web Developer" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%22%231a1a2e%22 width=%22300%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%2300d4ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EProfile Image%3C/text%3E%3C/svg%3E'">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-elements">
+            <div class="tech-item">{ }</div>
+            <div class="tech-item">&lt;/&gt;</div>
+            <div class="tech-item">[ ]</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="images/profile.jpg" alt="About" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%221a1a2e%22 width=%22300%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%2300d4ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EProfile Image%3C/text%3E%3C/svg%3E'">
+                    </div>
+                </div>
+
+<div class="about-text">
+    <h3>Frontend Web Developer</h3>
+
+    <p>
+        I'm a passionate Frontend Web Developer who creates modern, responsive, 
+        and user-friendly websites using HTML, CSS, and JavaScript. I focus on 
+        turning ideas into clean, professional digital experiences that work 
+        beautifully across all devices.
+    </p>
+
+    <p>
+        I enjoy building websites that combine attractive design, smooth 
+        interactions, and reliable functionality. From business websites and 
+        portfolios to dashboards and landing pages, I pay attention to detail 
+        and always aim to deliver a polished final result.
+    </p>
+
+    <div class="about-stats">
+        <div class="stat-item" data-value="4">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item" data-value="100">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Responsive</div>
+        </div>
+        <div class="stat-item" data-value="100">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Modern UI</div>
+        </div>
+        <div class="stat-item" data-value="100">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Clean Code</div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">Tools and technologies I use to build modern websites</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>HTML5</h3>
+                <p>Semantic, accessible, and well-structured web pages</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS3</h3>
+                <p>Responsive layouts, animations, and modern visual design</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>Interactive features, dynamic content, and smooth functionality</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Websites that look and work well on phones, tablets, and desktops</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">✨</div>
+                <h3>UI/UX Design</h3>
+                <p>Clean, intuitive, and user-focused digital experiences</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🔧</div>
+                <h3>Git & GitHub</h3>
+                <p>Version control, project management, and website deployment</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+
+        <div class="section-header">
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">
+                Professional web development services I offer
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Website Development</h3>
+                <p>Modern, professional websites built with clean HTML, CSS, and JavaScript, focused on performance and usability.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Responsive Web Design</h3>
+                <p>Fully responsive websites designed to provide a smooth and consistent experience across mobile, tablet, and desktop.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>Landing Pages</h3>
+                <p>Engaging landing pages with clear layouts, strong visual design, and effective calls to action.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Business Websites</h3>
+                <p>Professional business websites that showcase your brand, services, and information in a clear and attractive way.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Real Estate Websites</h3>
+                <p>Modern real estate websites featuring property listings, organized layouts, filtering, and user-friendly navigation.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Dashboard Interfaces</h3>
+                <p>Clean and intuitive dashboard interfaces designed to organize information, statistics, and data effectively.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">A selection of websites and digital experiences I've built</p>
+                
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+                <button class="filter-btn" data-filter="real-estate">Real Estate</button>
+                <button class="filter-btn" data-filter="automotive">Automotive</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card" data-category="restaurant">
+                    <div class="portfolio-image">
+                        <img src="images/restaurant.jpg" alt="Luxe Dining" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%221a1a2e%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%2300d4ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3ERestaurant Website%3C/text%3E%3C/svg%3E'">
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-primary btn-sm" onclick="openProjectModal(0)">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Luxe Dining</h3>
+                        <p>Restaurant Website</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="portfolio-links">
+                          <a href="https://seadadefo36-jpg.github.io/restaurant-website/" class="btn-link" target="_blank">Live Demo</a>
+<a href="https://github.com/seadadefo36-jpg/restaurant-website" class="btn-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card" data-category="real-estate">
+                    <div class="portfolio-image">
+                        <img src="images/nova-estates.jpg" alt="Nova Estates" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%221a1a2e%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%2300d4ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EReal Estate Website%3C/text%3E%3C/svg%3E'">
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-primary btn-sm" onclick="openProjectModal(1)">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Nova Estates</h3>
+                        <p>Real Estate Website</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://seadadefo36-jpg.github.io/nova-estates/" class="btn-link" target="_blank">Live Demo</a>
+<a href="https://github.com/seadadefo36-jpg/nova-estates" class="btn-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card" data-category="automotive">
+                    <div class="portfolio-image">
+                        <img src="images/driveon.jpg" alt="DriveOn" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%221a1a2e%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%2300d4ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3ECar Rental Website%3C/text%3E%3C/svg%3E'">
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-primary btn-sm" onclick="openProjectModal(2)">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>DriveOn</h3>
+                        <p>Car Rental Website</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://seadadefo36-jpg.github.io/driveon-car-rental/" class="btn-link" target="_blank">Live Demo</a>
+<a href="https://github.com/seadadefo36-jpg/driveon-car-rental" class="btn-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-card" data-category="dashboard">
+                    <div class="portfolio-image">
+                        <img src="images/dashboard.jpg" alt="Nexus Admin Dashboard" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%221a1a2e%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%2300d4ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EAdmin Dashboard%3C/text%3E%3C/svg%3E'">
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-primary btn-sm" onclick="openProjectModal(3)">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Nexus Admin Dashboard</h3>
+                        <p>Admin Dashboard</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://seadadefo36-jpg.github.io/nexus-dashboard/" class="btn-link" target="_blank">Live Demo</a>
+<a href="https://github.com/seadadefo36-jpg/nexus-dashboard" class="btn-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section class="why-work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Work With Me</h2>
+                <p class="section-subtitle">What sets me apart</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">📱</div>
+                    <h3>Responsive First</h3>
+                    <p>Every project is built with mobile-first approach, ensuring perfect display on all screen sizes.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🎨</div>
+                    <h3>Clean Design</h3>
+                    <p>Modern, aesthetic designs that are not only beautiful but also highly functional.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">😊</div>
+                    <h3>Great UX</h3>
+                    <p>User experience is at the heart of everything I build. Intuitive and delightful interactions.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">✅</div>
+                    <h3>Attention to Detail</h3>
+                    <p>Every pixel, every animation, every interaction is carefully crafted for perfection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Process</h2>
+                <p class="section-subtitle">How I work with you</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">01</div>
+                    <h3>Discover</h3>
+                    <p>Understanding your goals, vision, and requirements through detailed consultation.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">02</div>
+                    <h3>Design</h3>
+                    <p>Creating wireframes and designs that align with your brand and user needs.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">03</div>
+                    <h3>Develop</h3>
+                    <p>Building responsive, high-performance websites with clean and maintainable code.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">04</div>
+                    <h3>Launch</h3>
+                    <p>Deployment, testing, and ongoing support to ensure everything runs smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Build Something Great</h2>
+                <p class="section-subtitle">Get in touch with me today</p>
+            </div>
+
+<form class="contact-form" id="contactForm"
+      action="https://formsubmit.co/seadadefo36@gmail.com"
+      method="POST">
+                    <div class="form-group">
+<input type="text" name="name" placeholder="Your Name" id="contactName" required>
+
+<input type="email" name="email" placeholder="Your Email" id="contactEmail" required>
+
+<input type="text" name="subject" placeholder="Subject" id="contactSubject" required>
+
+<textarea name="message" placeholder="Your Message" id="contactMessage" rows="6" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=seadadefo36@gmail.com" target="_blank">
+    seadadefo36@gmail.com
+</a>
+                    </div>
+<div class="info-card">
+    <div class="info-icon">💼</div>
+    <h3>GitHub</h3>
+    <a href="https://github.com/seadadefo36-jpg" target="_blank">GitHub Profile</a>
+</div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()">×</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Seada Defo</h3>
+                    <p>Professional Web Developer</p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Connect</h4>
+<div class="social-links">
+    <a href="https://github.com/seadadefo36-jpg" target="_blank" class="social-link">GitHub</a>
+                        <a href="mailto:seadadefo36@gmail.com" class="social-link">Email</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span>Seada Defo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
