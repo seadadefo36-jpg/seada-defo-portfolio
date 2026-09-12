@@ -205,17 +205,18 @@ function setupBackToTopButton() {
 // SCROLL ANIMATIONS
 // ========================
 
-function initScrollAnimations() {
+
+      function initScrollAnimations() {
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
-    
+        threshold: 0.01,
+        rootMargin: '0px 0px 0px 0px'
+    };  
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('scroll-animate');
-                
+
+                if (entry.isIntersecting) {
+    entry.target.classList.add('scroll-animate');
+    observer.unobserve(entry.target);
                 // Animate elements with specific delays
                 const children = entry.target.querySelectorAll('.skill-card, .service-card, .portfolio-card, .why-card, .process-card');
                 children.forEach((child, index) => {
